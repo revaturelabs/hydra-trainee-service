@@ -1,5 +1,7 @@
 # hydra-trainee-service
 
+# Manipulates the trainee information and allows for messaging.
+
 # Contains the following methods:
 #	Trainee: 
 #		findAllByBatch
