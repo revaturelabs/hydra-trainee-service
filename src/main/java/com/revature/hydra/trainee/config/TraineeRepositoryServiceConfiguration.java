@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 
-import com.revature.hydra.trainee.model.Note;
-import com.revature.hydra.trainee.model.SimpleNote;
+import com.revature.beans.Note;
+import com.revature.beans.SimpleNote;
 import com.revature.hydra.trainee.service.TraineeCompositionService;
 
 public class TraineeRepositoryServiceConfiguration {

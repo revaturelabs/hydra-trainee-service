@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import com.revature.hydra.trainee.model.SimpleTrainee;
-import com.revature.hydra.trainee.model.Trainee;
-import com.revature.hydra.trainee.repository.TraineeRepository;
+import com.revature.beans.SimpleTrainee;
+import com.revature.beans.Trainee;
+import com.revature.hydra.trainee.data.TraineeRepository;
 /**
  * TraineeRepositoryRequestDispatcher
  * Changes JsonObject requests into strings. Depending on the message, different TraineeRepository methods are called to return
