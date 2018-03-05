@@ -25,8 +25,6 @@ public class TraineeServiceTests {
 //		assertFalse(listOfTrainees.isEmpty());
 //		System.out.println(listOfTrainees.get(1));
 //		listOfTrainees.forEach(x->System.out.println(x.getTrainingStatus()));
-		
-		
 	}
 	
 }
