@@ -6,12 +6,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.revature.hydra.trainee.model.Batch;
-import com.revature.hydra.trainee.model.SimpleBatch;
-import com.revature.hydra.trainee.model.SimpleTrainee;
-import com.revature.hydra.trainee.model.Trainee;
-import com.revature.hydra.trainee.model.TrainingStatus;
-import com.revature.hydra.trainee.repository.TraineeRepository;
+import com.revature.beans.Batch;
+import com.revature.beans.SimpleBatch;
+import com.revature.beans.SimpleTrainee;
+import com.revature.beans.Trainee;
+import com.revature.beans.TrainingStatus;
+import com.revature.hydra.trainee.data.TraineeRepository;
 /**
  * TraineeCompositionService
  * Implemented all the methods to achieve composition of complex Trainee.

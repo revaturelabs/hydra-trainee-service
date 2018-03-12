@@ -11,11 +11,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.revature.hydra.trainee.model.SimpleTrainee;
-import com.revature.hydra.trainee.model.Trainee;
-import com.revature.hydra.trainee.model.Trainer;
-import com.revature.hydra.trainee.model.TrainingStatus;
-import com.revature.hydra.trainee.repository.TraineeRepository;
+import com.revature.beans.SimpleTrainee;
+import com.revature.beans.Trainee;
+import com.revature.beans.Trainer;
+import com.revature.beans.TrainingStatus;
+import com.revature.hydra.trainee.data.TraineeRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

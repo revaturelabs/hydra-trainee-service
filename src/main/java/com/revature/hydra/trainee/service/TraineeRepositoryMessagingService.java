@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.revature.hydra.trainee.model.SimpleTrainee;
-import com.revature.hydra.trainee.model.Trainee;
+import com.revature.beans.SimpleTrainee;
+import com.revature.beans.Trainee;
 /**
  * Message Listener
  * The queue in which the message comes in determines the type of composition.

@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.google.gson.JsonObject;
-import com.revature.hydra.trainee.model.SimpleBatch;
+import com.revature.beans.SimpleBatch;
 /**
  * TraineeCompositionMessagingService
  * Sends messages to Batch's queue to obtain a Batch or list of Batches to build the complex TraineeBean and list of Trainee respectively.

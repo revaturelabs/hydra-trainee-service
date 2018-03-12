@@ -9,8 +9,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
-import com.revature.hydra.trainee.model.TrainingStatus;
-import com.revature.hydra.trainee.repository.TraineeRepository;
+import com.revature.beans.TrainingStatus;
+import com.revature.hydra.trainee.data.TraineeRepository;
 import com.revature.hydra.trainee.service.TraineeCompositionService;
 
 import springfox.documentation.builders.PathSelectors;
@@ -25,7 +25,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableEurekaClient 
 @EnableSwagger2
 @ComponentScan
-@EntityScan
+@EntityScan("com.revature.beans")
 public class TraineeRepositoryServiceApplication {
 	@Autowired
 	TraineeCompositionService tcs;

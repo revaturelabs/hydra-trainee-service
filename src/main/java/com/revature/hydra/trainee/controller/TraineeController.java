@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.revature.hydra.trainee.model.Trainee;
+import com.revature.beans.Trainee;
 import com.revature.hydra.trainee.service.TraineeService;
 
 /**

@@ -15,9 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.revature.hydra.trainee.model.SimpleTrainee;
-import com.revature.hydra.trainee.model.TrainerRole;
-import com.revature.hydra.trainee.repository.TraineeRepository;
+import com.revature.beans.SimpleTrainee;
+import com.revature.beans.TrainerRole;
+import com.revature.hydra.trainee.data.TraineeRepository;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest

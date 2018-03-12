@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.revature.hydra.trainee.model.Trainee;
+import com.revature.beans.Trainee;
 
 /**
  * Provides logic concerning trainer and trainee data. Application logic has no
