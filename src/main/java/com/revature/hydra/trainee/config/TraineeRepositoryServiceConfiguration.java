@@ -6,9 +6,6 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
-
-import com.revature.beans.Note;
-import com.revature.beans.SimpleNote;
 import com.revature.hydra.trainee.service.TraineeCompositionService;
 
 public class TraineeRepositoryServiceConfiguration {
