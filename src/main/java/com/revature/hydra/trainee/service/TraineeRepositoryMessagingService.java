@@ -31,7 +31,7 @@ public class TraineeRepositoryMessagingService {
 	 * @param String - message
 	 * @return SimpleTrainee 
 	 */
-	@RabbitListener(queues = "revature.caliber.repos.trainee")
+	@RabbitListener(queues = "revature.hydra.repos.trainee")
 	public SimpleTrainee receiveSingleSimpleTraineeRequest(String message) {
 		JsonParser parser = new JsonParser();
 		JsonElement element = parser.parse(message);
@@ -53,7 +53,7 @@ public class TraineeRepositoryMessagingService {
 	 *
 	 * @return List of SimpleTrainee
 	 */
-	@RabbitListener(queues = "revature.caliber.repos.trainee.list")
+	@RabbitListener(queues = "revature.hydra.repos.trainee.list")
 	public List<SimpleTrainee> receiveListSimpleTraineeRequest(String message) {
 		JsonParser parser = new JsonParser();
 		JsonElement element = parser.parse(message);
@@ -70,8 +70,7 @@ public class TraineeRepositoryMessagingService {
 	 * @param String - message
 	 * @return List<Trainee> - List of Complex Trainees
 	 */
-	@RabbitListener(queues = "revature.caliber.service.trainee.list")
-//	@RabbitListener(queues = "revature.caliber.service.test.list")
+	@RabbitListener(queues = "revature.hydra.service.trainee.list")
 	public List<Trainee> receiveListTraineeRequest(String message) {
 		JsonParser parser = new JsonParser();
 		JsonElement element = parser.parse(message);
