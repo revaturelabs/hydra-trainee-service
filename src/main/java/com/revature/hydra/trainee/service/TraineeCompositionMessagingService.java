@@ -30,7 +30,7 @@ public class TraineeCompositionMessagingService {
 	/**
 	 * Team Data RABBITMQ Exchange Name
 	 */
-	private static final String RABBIT_REPO_EXCHANGE = "revature.caliber.repos";
+	private static final String RABBIT_REPO_EXCHANGE = "revature.hydra.repos";
 	
 	/**
 	 * sphuang 02/07/2018 

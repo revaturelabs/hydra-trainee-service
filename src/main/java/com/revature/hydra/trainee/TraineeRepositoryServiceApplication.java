@@ -4,8 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import com.revature.hydra.trainee.model.TrainingStatus;
 import com.revature.hydra.trainee.repository.TraineeRepository;
@@ -22,6 +24,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableEurekaClient 
 @EnableSwagger2
+@ComponentScan
+@EntityScan
 public class TraineeRepositoryServiceApplication {
 	@Autowired
 	TraineeCompositionService tcs;
