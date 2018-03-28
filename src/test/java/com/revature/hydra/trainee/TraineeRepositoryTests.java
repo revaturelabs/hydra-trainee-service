@@ -5,6 +5,7 @@ import static org.junit.Assert.assertNotNull;
 
 import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,7 @@ public class TraineeRepositoryTests {
 	public void TestfindOneByTraineeIdAndTrainingStatusNot() {
 		SimpleTrainee trainee = test.findOne(1);
 		
-		trainee = test.findOneByTraineeIdAndTrainingStatusNot((Integer) trainee.getTraineeId(), TrainingStatus.Dropped);
+		trainee = test.findOneByTraineeId((Integer) trainee.getTraineeId());
 		assertNotNull(trainee.getTraineeId());
 	}
 	
