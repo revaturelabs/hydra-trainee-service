@@ -139,7 +139,19 @@ public class TraineeController {
 		 */
 		return new ResponseEntity<>(null, HttpStatus.OK);
 	}
-
+	
+	@RequestMapping(value="/all/trainee/getById/{traineeId}", method = RequestMethod.GET)
+	public ResponseEntity<Trainee> retreiveTraineeById(@PathVariable Integer traineeId) {
+		Trainee trainee = traineeService.findTrainee(traineeId);
+		return new ResponseEntity<Trainee>(trainee, HttpStatus.OK);
+	}
+	
+	@RequestMapping(value="/all/trainee/getAll/", method = RequestMethod.GET)
+	public ResponseEntity<List<Trainee>> retreiveAllTrainees() {
+		List<Trainee> trainee = traineeService.findAllTrainees();
+		return new ResponseEntity<List<Trainee>>(trainee, HttpStatus.OK);
+	}
+	
 	/**
 	 * Convenience method for accessing the Trainer information from the User
 	 * Principal.

@@ -26,7 +26,7 @@ public interface TraineeRepository extends JpaRepository<SimpleTrainee, Integer>
 	 * @return SimpleTrainee
 	 */
   
-	SimpleTrainee findOneByTraineeIdAndTrainingStatusNot(Integer traineeId, TrainingStatus status);
+	SimpleTrainee findOneByTraineeId(Integer traineeId);
 	
 	/**
 	 * find a list of SimpleTrainee by email and without this status

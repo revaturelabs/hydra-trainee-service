@@ -10,17 +10,12 @@ import org.springframework.context.annotation.ComponentScan;
 
 import com.revature.hydra.trainee.data.TraineeRepository;
 import com.revature.hydra.trainee.service.TraineeCompositionService;
-
-import springfox.documentation.builders.PathSelectors;
-import springfox.documentation.builders.RequestHandlerSelectors;
-import springfox.documentation.spi.DocumentationType;
-import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 
 @SpringBootApplication
-@EnableEurekaClient 
-@EnableSwagger2
+//@EnableEurekaClient 
+//@EnableSwagger2
 @ComponentScan
 @EntityScan("com.revature.beans")
 public class TraineeRepositoryServiceApplication {
@@ -34,12 +29,12 @@ public class TraineeRepositoryServiceApplication {
 		SpringApplication.run(TraineeRepositoryServiceApplication.class, args);
 	}
 	
-	@Bean
-    public Docket api() { 
-        return new Docket(DocumentationType.SWAGGER_2)  
-          .select()                                  
-          .apis(RequestHandlerSelectors.basePackage("com.revature.hydra.trainee.controller"))              
-          .paths(PathSelectors.any())                          
-          .build();
-    }
+//	@Bean
+//    public Docket api() { 
+//        return new Docket(DocumentationType.SWAGGER_2)  
+//          .select()                                  
+//          .apis(RequestHandlerSelectors.basePackage("com.revature.hydra.trainee.controller"))              
+//          .paths(PathSelectors.any())                          
+//          .build();
+//    }
 }

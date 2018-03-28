@@ -155,8 +155,7 @@ public class TraineeCompositionService {
 	 * @return List<Trainee> - List of complex Trainees
 	 */
 	public Trainee findOne(Integer traineeId) {
-		SimpleTrainee basis = traineeRepository.findOneByTraineeIdAndTrainingStatusNot(traineeId,
-				TrainingStatus.Dropped);
+		SimpleTrainee basis = traineeRepository.findOneByTraineeId(traineeId);
 		Trainee result = composeTrainee(basis);
 
 		return result;
@@ -234,11 +233,11 @@ public class TraineeCompositionService {
 	private Trainee composeTrainee(SimpleTrainee simpleTrainee) {
 		Trainee trainee = new Trainee(simpleTrainee);
 
-		SimpleBatch simpleBatch = traineeCompositionMessagingService
-				.sendSingleSimpleBatchRequest(simpleTrainee.getBatchId());
-		Batch batch = new Batch(simpleBatch);
-		trainee.setBatch(batch);
-
+//		SimpleBatch simpleBatch = traineeCompositionMessagingService
+//				.sendSingleSimpleBatchRequest(simpleTrainee.getBatchId());
+//		Batch batch = new Batch(simpleBatch);
+//		trainee.setBatch(batch);
+		trainee.setBatch(null);
 		return trainee;
 	}
 }
